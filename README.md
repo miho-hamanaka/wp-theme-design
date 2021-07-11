@@ -1,6 +1,6 @@
 # wp-theme
 
-WordPress のオリジナルテーマ
+WordPress のオリジナルテーマ集
 
 # Features
 
@@ -8,7 +8,7 @@ WordPress のオリジナルテーマ
 
 # Installation
 
-## SCSS でかかれています
+### [SCSS でかかれています]
 
 SCSS のソースコードは /scss にあります。
 
@@ -18,7 +18,7 @@ SCSS のソースコードは /scss にあります。
 @import 'ディレクトリ/scssファイル名' // 読み込みを行いたい scss ファイル
 ```
 
-## 使用している Plugin
+### [使用している Plugin]
 
 - Breadcrumb NavXT(パンくずリスト)
 - Recent Posts Widget With Thumbnails(最新投稿のサムネイルをサイドバーに表示)
