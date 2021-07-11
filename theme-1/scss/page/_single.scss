@@ -1,0 +1,190 @@
+/********************************************
+
+singleページ
+
+********************************************/
+.single-container {
+  width: 950px;
+
+  @include tab {
+    width: auto;
+  }
+
+  @include sp {
+    width: auto;
+  }
+}
+
+.single {
+  padding: 0 10px;
+  @include sp {
+    padding: 0;
+  }
+}
+
+.single h1.title {
+  font-size: 25px;
+  line-height: 1.5;
+  border-bottom: solid 3px $lineColor;
+  position: relative;
+  margin-bottom: 6px;
+
+  @include sp {
+    font-size: 5vw;
+  }
+}
+
+.single h1.title:after {
+  position: absolute;
+  content: " ";
+  display: block;
+  border-bottom: solid 3px $main-color;
+  bottom: -3px;
+  width: 20%;
+}
+
+.single .post-date {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.single .post-date i {
+  margin-right: 2px;
+}
+
+.single .content .icatch {
+  margin-bottom: 30px;
+  text-align: center;
+
+  @include sp {
+    margin-bottom: 4.3vw;
+  }
+}
+
+.single .content .icatch img {
+  max-width: 100%;
+  height: auto;
+}
+
+.single .content p {
+  margin-bottom: 15px;
+}
+
+.single .content ul {
+  margin-bottom: 15px;
+}
+
+.single .content ol {
+  margin-bottom: 18px;
+}
+
+.single .post-date {
+  color: $sub-textColor;
+  font-size: 11px;
+}
+.single .heading_padding a {
+  color: $key-color;
+  font-weight: bold;
+  line-height: 1.9;
+}
+
+/* 目次の行間 */
+.heading_padding {
+  padding: 6px 0;
+
+  @include sp {
+    font-size: 4vw;
+    line-height: 1.6;
+  }
+}
+
+/********************************************
+
+記事: 前後のリンク
+
+********************************************/
+
+@include pc {
+  .post-navigation .nav-links {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 40px 0;
+    width: 590px;
+  }
+}
+
+@include tab {
+  .post-navigation .nav-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    column-gap: 30px;
+    margin-top: 50px;
+    padding: 40px 0;
+    border-top: solid 1px $lineColor;
+    border-bottom: solid 1px $lineColor;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+.post-navigation .nav-previous {
+  width: 345px;
+  margin-left: 15%;
+
+  @include sp {
+    grid-column: 1;
+    width: 48%;
+  }
+}
+
+.post-navigation .nav-next {
+  width: 345px;
+
+  @include sp {
+    grid-column: 2;
+    width: 48%;
+  }
+}
+.post-navigation .nav-next {
+    margin-left: 30px;
+}
+
+.post-navigation .nav-previous a::after {
+  content: '\f138';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: bold;
+  color: $main-color;
+}
+
+.post-navigation .nav-next a::before {
+  content: '\f137';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: bold;
+  color: $main-color;
+}
+
+.post-navigation .nav-previous a,
+.post-navigation .nav-next a {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 10px;
+  column-gap: 5px;
+  align-items: center;
+  justify-content: start;
+
+  @include sp {
+    justify-content: flex-start;
+  }
+}
+
+.post-navigation .nav-next a {
+  text-align: right;
+  justify-content: end;
+
+  @include sp {
+    justify-content: flex-start;
+  }
+}
+
+

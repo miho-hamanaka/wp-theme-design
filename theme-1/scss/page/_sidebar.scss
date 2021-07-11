@@ -1,0 +1,77 @@
+/********************************************
+
+サイドバー
+
+********************************************/
+aside section {
+  width: 300px;
+  margin-left: 26px;
+  background-color: $sidebar-bgColor;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 40px;
+
+  @include tab {
+    width: 700px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  @include sp {
+    width: auto;
+    margin: 0 auto;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+}
+
+aside .widgettitle {
+  color: $key-color;
+  font-size: 19px;
+  font-weight: normal;
+  text-align: center;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid $key-lineColor;
+  margin-bottom: 13px;
+
+  @include sp {
+    text-align: center;
+    border-bottom: 1px solid $key-lineColor;
+    padding-bottom: 1vw;
+    margin-bottom: 2.6vw;
+  }
+}
+
+aside section li {
+  list-style: none;
+  font-size: 0.9rem;
+  padding: 2px !important;
+  margin: 0 0 5px !important;
+
+  @include sp {
+    font-size: 4vw;
+    padding: 6px !important;
+    margin: 0 0 0 !important;
+  }
+}
+
+aside section li a {
+  color: #555555 !important;
+}
+
+aside .post-date {
+  color: $sub-textColor;
+  font-size: 11px;
+}
+
+aside .rpwwt-post-date {
+  color: $sub-textColor;
+  font-size: 11px;
+}
+aside .rpwwt-post-date::before {
+  content: '\f017';
+  font-family: 'Font Awesome 5 Free';
+  color: $sub-textColor;
+  font-size: 11px;
+  margin-right: 3px;
+}

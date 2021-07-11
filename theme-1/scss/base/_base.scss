@@ -1,0 +1,95 @@
+/* GENERAL
+ * ----------------------------------------------- */
+
+body {
+  background: $main-bgcColor;
+  font-family: $primary-font;
+  line-height: 1.4;
+  color: $primary-textColor;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  overflow-y: scroll;
+}
+
+/* スクリーンリーダー用のテキスト */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+a {
+  transition: opacity 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  font-size: 0;
+}
+
+.display-sp {
+  display: none;
+
+  @include sp {
+    display: block;
+  }
+}
+
+@include sp {
+  .display-none {
+    display: none;
+  }
+}
+
+.wrapper {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tab {
+    width: 760px;
+    padding: 0 4%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  @include sp {
+    width: auto;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+  }
+}
+
+.global-container {
+  width: 1000px;
+  display: flex;
+  margin: 0 auto;
+
+  @include tab {
+    width: 700px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  @include sp {
+    width: auto;
+    display: block;
+  }
+}

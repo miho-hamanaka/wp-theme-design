@@ -1,0 +1,17 @@
+/*
+Theme Name: MY THEME
+Theme URL: テーマのサイトのURL
+Author: Miho Hamanaka
+Description: オリジナルテーマです
+Version: 1.0  */
+@charset "utf-8";
+@import "config/mixin";
+@import "config/variable";
+@import "base/base";
+@import "base/reset";
+@import "module/header";
+@import "module/footer";
+@import "page/index";
+@import "page/archive";
+@import "page/sidebar";
+@import "page/single";

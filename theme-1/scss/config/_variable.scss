@@ -1,0 +1,97 @@
+
+/********************************************
+
+フォント
+
+********************************************/
+
+$primary-font: "メイリオ",
+Meiryo,
+sans-serif;
+
+
+/********************************************
+
+カラー
+
+********************************************/
+
+$primary-textColor: #333;
+
+$colorWhite: #fff;
+
+$key-textColor: #bf9b45;
+$key-color: #b89f65;
+$key-lineColor: #e4d4c7;
+
+$main-color: #444;
+
+$sub-textColor: #bbb;
+
+$lineColor: #ddd;
+
+$main-bgcColor: #fff;
+$sidebar-bgColor: #fbfbfb;
+
+
+/********************************************
+
+記事:見出しフォントサイズ
+
+********************************************/
+
+:root {
+  --f1: 2.44em;
+  --f2: 1.95em;
+  --f3: 1.56em;
+  --f4: 1.25em;
+  --f5: 1em;
+  --f6: 0.8em;
+}
+
+h1 {
+  font-size: var(--f1);
+  font-weight: normal;
+}
+
+.single .content h2 {
+  font-size: var(--f4);
+  font-weight: bold;
+  color: #494949;
+  padding: 0.25em 0.5em;
+  background: transparent;
+  border-left: solid 5px $key-color;
+  margin-bottom: 20px;
+}
+
+.single .content h3 {
+  font-size: var(--f4);
+  font-weight: bold;
+  color: #d8a42c;
+  line-height: 2.3;
+  margin-bottom: 12px;
+}
+
+.single .content h4 {
+  font-size: var(--f4);
+  font-weight: bold;
+  line-height: 2.3;
+  margin-bottom: 12px;
+}
+
+.single .content h5 {
+  font-size: var(--f4);
+  font-weight: bold;
+  color: $sub-textColor;
+  line-height: 2.3;
+  margin-bottom: 12px;
+}
+
+.single .content h6 {
+  font-size: var(--f4);
+}
+
+p {
+  line-height: 2;
+}
+
